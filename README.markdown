@@ -44,8 +44,8 @@ Via @Repository and "PersistenceExceptionTranslationPostProcessor"
 
 	public interface MoneyRepository {
 
-		public void make( MoneyRoll moneyRoll );        // C
-		public MoneyRoll find( Long id );                      // R
+		public void make( MoneyRoll moneyRoll );       // C
+		public MoneyRoll find( Long id );              // R
 		public void update( MoneyRoll moneyRoll );     // U
 		public void takeOut( MoneyRoll moneyRoll );    // D
 	}
