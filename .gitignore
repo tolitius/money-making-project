@@ -1,0 +1,11 @@
+.idea/*
+*.swp
+*.iml
+*.ipr
+*.iws
+*.h2.db
+*.class
+*.jar
+.project
+.settings
+target/*

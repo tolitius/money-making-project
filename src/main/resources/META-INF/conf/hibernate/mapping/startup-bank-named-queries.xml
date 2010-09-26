@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.gitpod.startup.bank">
+
+    <query name="find.moneyroll.by.id">from MoneyRoll where id = :id</query>
+    <query name="update.moneyroll">update MoneyRoll set amount = :amount, currency = :currency where id = :id</query>    
+
+</hibernate-mapping>
