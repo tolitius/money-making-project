@@ -1,3 +1,5 @@
+> <em><sub>while this project is many years old, and only runs with a pre 11 Java, the principles still apply</sub></em>
+
 ## What is "Money Making Project"? ##
 
 A very simple example on how to use Spring and Hibernate together
