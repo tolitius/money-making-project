@@ -5,7 +5,7 @@ import org.gitpod.startup.bank.MoneyRoll;
 
 public interface MoneyMakingBusinessService {
 
-	public void makeMoney( MoneyRoll money );
+	void makeMoney( MoneyRoll money );
 	
-	public MoneyRoll withdrawMoney( Long moneyRollId );	
+	MoneyRoll withdrawMoney( Long moneyRollId );
 }

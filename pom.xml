@@ -7,6 +7,8 @@
 	<properties>
 		<spring.framework.version>3.0.4.RELEASE</spring.framework.version>
 		<hibernate.framework.version>3.5.6-Final</hibernate.framework.version>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
 	</properties>
 
     <repositories>
@@ -26,6 +28,10 @@
             <url>https://repository.jboss.org/nexus/content/groups/public/</url>
         </repository>
 
+        <repository>
+            <id>spring plugin repo</id>
+            <url>https://repo.spring.io/plugins-release/</url>
+        </repository>
     </repositories>
 
 	<dependencies>
@@ -93,25 +99,32 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.6.1</version>
+            <version>1.7.7</version>
         </dependency>
 
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.6.1</version>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>2.0.1</version>
         </dependency>
 
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.27</version>
+           <groupId>org.apache.logging.log4j</groupId>
+           <artifactId>log4j-api</artifactId>
+           <version>2.0.1</version>
+        </dependency>
+
+        <dependency>
+           <groupId>org.apache.logging.log4j</groupId>
+           <artifactId>log4j-core</artifactId>
+           <version>2.0.1</version>
         </dependency>
 
         <dependency>
             <groupId>org.junit</groupId>
             <artifactId>com.springsource.org.junit</artifactId>
-            <version>4.7.0</version>
+            <version>4.11.0</version>
+            <scope>test</scope>
         </dependency>
 
         <dependency>
@@ -123,98 +136,9 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>4.13</version>
             <scope>test</scope>
         </dependency>
-
-        <!--
-                <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>org.springframework.core</artifactId>
-                    <version>${spring.framework.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-mock</artifactId>
-                    <version>2.0.8</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>org.springframework.context</artifactId>
-                    <version>${spring.framework.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>org.springframework.context.support</artifactId>
-                    <version>${spring.framework.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-orm</artifactId>
-                    <version>${spring.framework.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-tx</artifactId>
-                    <version>${spring.framework.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-web</artifactId>
-                    <version>${spring.framework.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-webmvc</artifactId>
-                    <version>${spring.framework.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-webmvc-portlet</artifactId>
-                    <version>${spring.framework.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-tx</artifactId>
-                    <version>${spring.framework.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework.security</groupId>
-                    <artifactId>spring-security-core</artifactId>
-                    <version>${spring.framework.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework.security</groupId>
-                    <artifactId>spring-security-web</artifactId>
-                    <version>${spring.framework.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework.webflow</groupId>
-                    <artifactId>spring-binding</artifactId>
-                    <version>${springwebflow.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework.webflow</groupId>
-                    <artifactId>spring-js</artifactId>
-                    <version>${springwebflow.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework.webflow</groupId>
-                    <artifactId>spring-webflow</artifactId>
-                    <version>${springwebflow.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework.webflow</groupId>
-                    <artifactId>spring-faces</artifactId>
-                    <version>${springwebflow.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-beans</artifactId>
-                    <version>${spring.framework.version}</version>
-                </dependency>
-
-        -->
 	</dependencies>
 </project>
 
