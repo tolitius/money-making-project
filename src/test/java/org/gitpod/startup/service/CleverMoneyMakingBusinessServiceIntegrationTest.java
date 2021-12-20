@@ -1,18 +1,16 @@
 package org.gitpod.startup.service;
 
-import static org.junit.Assert.assertEquals;
-
-import java.math.BigDecimal;
-
-import javax.annotation.Resource;
-
 import org.gitpod.startup.bank.Currency;
 import org.gitpod.startup.bank.MoneyRoll;
-import org.gitpod.startup.service.MoneyMakingBusinessService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import javax.annotation.Resource;
+import java.math.BigDecimal;
+
+import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({ "classpath:META-INF/conf/spring/application-context.xml",
