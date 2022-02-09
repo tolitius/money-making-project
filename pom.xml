@@ -6,7 +6,7 @@
 
 	<properties>
 		<spring.framework.version>3.0.4.RELEASE</spring.framework.version>
-		<hibernate.framework.version>3.6.10.Final</hibernate.framework.version>
+		<hibernate.framework.version>5.4.24.Final</hibernate.framework.version>
         <maven.compiler.source>1.6</maven.compiler.source>
         <maven.compiler.target>1.6</maven.compiler.target>
 	</properties>
